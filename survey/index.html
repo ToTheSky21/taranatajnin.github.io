@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FCC: Survey Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Skranji:700|Ubuntu:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"></script>
+</head>
+
+<body>
+  <main id="main">
+   <header>
+    <h1 id="title">South African Safaris</h1>
+    <p id="description">This survey has been created to assess users' experience of safaris (known locally as <em>Game Reserves</em>) in Southern Africa.</p>
+   </header>
+   <form id="survey-form" class="grid-container">
+    <fieldset class="form-area">
+      <legend>About you:</legend>
+      <div class="info-section">
+        <div class="label">
+          <label for="name" id="name-label">Name: </label>
+        </div>
+        <div class="user-input">
+          <input type="text" name="name" id="name" placeholder="Full name" autofocus required="">
+        </div>
+      </div>
+      
+      <div>
+        <div class="label">
+          <label for="email" id="email-label">Email: </label>
+        </div>
+        <div class="user-input">
+          <input type="email" name="email" id="email" placeholder="Email address" required="">
+        </div>
+      </div>
+
+      <div>
+        <div class="label">
+          <label for="number" id="number-label">Age: </label>
+        </div>
+        <div class="user-input">
+          <input type="number" name="age" id="number" placeholder="Age (0 - 120)" min="16" max="100">
+        </div>  
+      </div>
+    </fieldset>
+    
+    <fieldset class="form-area">
+      <legend>About your safari experience:</legend>
+      <div class="experience">
+        <div>
+          <div class="info-set">
+            <p>Please select your most recent safari destination:</p>
+            <select id="dropdown" name="reserves">
+              <option value="addo">Addo Elephant Park</option>
+              <option value="entabeni">Entabeni Safari Conservancy</option>
+              <option value="umfolozi">Hluhluwe Umfolozi Game Park</option>
+              <option value="kgalagadi">Kgalagadi Transfrontier Park</option>
+              <option value="kruger">Kruger National Park</option>
+              <option value="pilanesberg">Pilanesberg Game Reserve</option>
+            </select>
+          </div>
+          
+          <div class="info-set">
+            <p>What kind of accommodation did you stay in?</p>
+            <input type="radio" name="accommodation" value="hotel" checked> Hotel<br>
+            <input type="radio" name="accommodation" value="chalet"> Chalet<br>
+            <input type="radio" name="accommodation" value="park-tent"> Tented Camp<br>
+            <input type="radio" name="accommodation" value="own-tent"> Own Tent<br>
+          </div>
+        </div>
+        
+
+        <div class="info-set">
+          <p>Which factors made you choose this reserve?</p>
+          <input type="checkbox" name="experience" value="big5"> Big 5<br>
+          <input type="checkbox" name="experience" value="birds"> Birdwatching<br>
+          <input type="checkbox" name="experience" value="bok"> Antelope<br>
+          <input type="checkbox" name="experience" value="flora"> Native Flora<br>
+          <input type="checkbox" name="experience" value="camping"> Camping experience<br>
+          <input type="checkbox" name="experience" value="drives"> Guided Game Drives<br>
+          <input type="checkbox" name="experience" value="activities"> Activities (eg quad biking / horseback safaris<br>
+          <input type="checkbox" name="experience" value="personal"> Personal significance<br>
+        </div>      
+
+        <div class="text-area info-set">
+          <p>Please share your best memory from your safari holiday:</p>
+          <textarea></textarea>
+        </div>
+      </div>
+            
+    </fieldset>
+    <input type="submit" name="submit" id="submit" value="Submit" class="form-area">
+
+   </form>
+  </main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript" ></script> 
+</body>
